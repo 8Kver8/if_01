@@ -12,14 +12,17 @@ class Program
 
         int a = num / 10;
         int b = num % 10;
+        string result;
 
-        if (a == c || b == c) 
+        if (a == c || b == c)
         {
-            Console.WriteLine("такая цифра есть");
+            result = "такая цифра есть";
         }
-        else 
+        else
         {
-            Console.WriteLine("такой цифры нет");
+            result = "такой цифры нет";
         }
+
+        Console.WriteLine(result);
     }
 }
