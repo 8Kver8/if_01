@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{E8397FD9-DEDA-4923-9AF9-718DF30C7E4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1Tests", "ConsoleApp1Tests\ConsoleApp1Tests.csproj", "{E0AC5231-855D-4285-88D8-2994EFCF20FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +22,10 @@ Global
 		{E8397FD9-DEDA-4923-9AF9-718DF30C7E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8397FD9-DEDA-4923-9AF9-718DF30C7E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8397FD9-DEDA-4923-9AF9-718DF30C7E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0AC5231-855D-4285-88D8-2994EFCF20FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AC5231-855D-4285-88D8-2994EFCF20FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AC5231-855D-4285-88D8-2994EFCF20FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AC5231-855D-4285-88D8-2994EFCF20FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
