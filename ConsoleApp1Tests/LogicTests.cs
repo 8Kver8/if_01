@@ -12,63 +12,57 @@ namespace FirstApp.Tests
     public class LogicTests
     {
         [TestMethod()]
-        public void Test1()
+        public void TestHaveFirstDigit()
         {
             int num = 45;
             int digit = 4;
-            string expected = "такая цифра есть";
             string actual = Logic.CheckDigit(num, digit);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("такая цифра есть", actual);
         }
 
         [TestMethod()]
-        public void Test2()
+        public void TestHaveSecondDigit()
         {
             int num = 45;
             int digit = 5;
-            string expected = "такая цифра есть";
             string actual = Logic.CheckDigit(num, digit);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("такая цифра есть", actual);
         }
 
         [TestMethod()]
-        public void Test3()
+        public void TestHaveNotPositiveDigit()
         {
             int num = 45;
             int digit = 3;
-            string expected = "такой цифры нет";
             string actual = Logic.CheckDigit(num, digit);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("такой цифры нет", actual);
         }
 
         [TestMethod()]
-        public void Test4()
+        public void TestHaveAllDigit()
         {
             int num = 44;
             int digit = 4;
-            string expected = "такая цифра есть";
             string actual = Logic.CheckDigit(num, digit);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("такая цифра есть", actual);
         }
 
         [TestMethod()]
-        public void Test5()
+        public void TestHaveNotNegativeDigit()
         {
             int num = 45;
             int digit = -5;
-            string expected = "такой цифры нет";
             string actual = Logic.CheckDigit(num, digit);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("такой цифры нет", actual);
         }
 
         [TestMethod()]
-        public void Test6()
+        public void TestHaveNotNumber()
         {
             int num = 45;
             int digit = 10;
-            string expected = "такой цифры нет";
             string actual = Logic.CheckDigit(num, digit);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("такой цифры нет", actual);
         }
     }
 }
